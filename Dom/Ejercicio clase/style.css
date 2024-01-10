@@ -1,0 +1,19 @@
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+nav{
+    background-color:#f2dff9;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+nav h1{
+    color: rgb(57, 57, 57);
+    font-size: 40px;
+}

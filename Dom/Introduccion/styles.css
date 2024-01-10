@@ -1,0 +1,125 @@
+/* 1 REM = 10 PX */
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 16px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+h1{
+    color: brown;
+    text-align: center;
+    font-size: 8rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 6rem;
+}
+
+span{
+    font-size: 3rem;
+    color: black;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.bg-nav{
+    background-color: gray;
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 76.8rem){
+    .navegacion-principal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* @media(min-width:90rem){
+    body{
+        background-color: black;
+    }
+} */
+
+.navegacion-principal a{
+   padding: 1.5rem;
+   color: white;
+   font-size: 3rem;
+   text-decoration: none;
+}
+.navegacion-principal a:hover{
+   background-color: black;
+   
+}
+
+.hero{
+    background-image: url(programming.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+}
+.hero-contenido{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    background-color: rgb(0 0 0 /60%);
+    color: white;
+}
+
+.boton{
+    background-color: brown;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.boton:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.servicios{
+   /*  display: flex;
+    flex-direction: row;
+    justify-content: center; */
+    gap: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.servicios-detalle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    border-radius: 1.5rem;
+}
+
+.servicios-detalle p{
+    padding: 1rem;
+    color: white;
+    font-size: 2rem;
+}
